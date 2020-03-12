@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activities.SmsDetailedView">
+
+
+    <item android:id="@+id/view_contact_chat_menu"
+        android:title="View Contact" />
+
+    <item android:id="@+id/archive_conversation_chat_menu"
+        android:title="Archive Conversation" />
+
+
+    <item android:id="@+id/conversation_informtaion_chat_menu"
+        android:title="Conversation Information" />
+
+    <item android:id="@+id/blacklist_contact_chat_menu"
+        android:title="Blacklist Contact" />
+
+
+    <item android:id="@+id/schedule_message_chat_menu"
+        android:title="Schedule Message" />
+
+
+    <item android:id="@+id/delete_conversation_chat_menu"
+        android:title="Delete Conversation" />
+
+
+    <item android:id="@+id/search_conversation_chat_menu"
+        android:title="Search Conversation" />
+
+    <item android:id="@+id/conversation_settings_chat_menu"
+        android:title="Conversation Settings" />
+
+
+
+
+
+</menu>

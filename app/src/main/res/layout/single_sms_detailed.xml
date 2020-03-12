@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_margin="5dp"
+    android:layout_height="wrap_content">
+
+    <!--    android:id="@+id/message"-->
+    <!--    android:id="@+id/time"-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginRight="55dp"
+        android:weightSum="10"
+        android:layout_gravity="right|center"
+        android:gravity="right|center"
+        android:layout_height="wrap_content">
+
+        <!--        <LinearLayout-->
+        <!--            android:layout_width="0dp"-->
+        <!--            android:layout_weight="1.25"-->
+        <!--            android:gravity="center"-->
+        <!--            android:layout_gravity="center"-->
+        <!--            android:layout_height="match_parent">-->
+
+
+        <!--            <ImageView-->
+        <!--                android:layout_width="25dp"-->
+        <!--                android:layout_gravity="center"-->
+
+        <!--                android:layout_height="25dp">-->
+
+        <!--            </ImageView>-->
+
+        <!--        </LinearLayout>-->
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="9.5"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:gravity="left|center"
+              android:padding="15dp"
+                android:layout_gravity="left"
+                android:background="@drawable/other_message_shape"
+                android:layout_height="match_parent">
+
+
+                <TextView
+                    android:id="@+id/message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+
+                    android:text="Where are you...?"
+                    android:textColor="@color/black">
+
+                </TextView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:gravity="left"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/time"
+                    android:layout_width="wrap_content"
+                    android:gravity="center|bottom"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="5dp"
+                    android:textSize="10sp"
+                    android:paddingLeft="15dp"
+                    android:text="17-12-2020">
+
+                </TextView>
+
+
+
+                <!--                <TextView-->
+                <!--                  -->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:gravity="center"-->
+                <!--                    android:layout_marginRight="5dp"-->
+                <!--                    android:textSize="10sp"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:paddingRight="5dp"-->
+                <!--                    android:text="11:08 pm">-->
+
+                <!--                </TextView>-->
+
+                <!--                <TextView-->
+                <!--                  -->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:gravity="center|bottom"-->
+                <!--                    android:layout_height="match_parent"-->
+                <!--                    android:textSize="10sp"-->
+                <!--                    android:paddingRight="5dp"-->
+                <!--                    android:text="Monday">-->
+
+                <!--                </TextView>-->
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp">
+
+    </Space>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginLeft="55dp"
+        android:weightSum="10"
+        android:layout_gravity="right|center"
+        android:gravity="right|center"
+        android:layout_height="wrap_content">
+
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="8.75"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/my_sent_message"
+                android:layout_width="wrap_content"
+                android:gravity="center|right"
+                android:layout_gravity="right|center"
+                android:background="@drawable/my_message_shape"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/ff"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="right"
+                    android:padding="20dp"
+                    android:text="hmilny b mai aaey ho tum to "
+                    android:textColor="@color/white">
+
+                </TextView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:gravity="right"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/my_sent_message_date"
+                    android:layout_width="wrap_content"
+                    android:gravity="center|bottom"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="5dp"
+                    android:textSize="10sp"
+                    android:paddingRight="10dp"
+
+                    android:text="17-12-2020">
+
+                </TextView>
+
+
+
+                <!--            <TextView-->
+                <!--                android:id="@+id/receiver_time_main_chat"-->
+                <!--                android:layout_width="wrap_content"-->
+                <!--                android:gravity="center"-->
+                <!--                android:layout_marginRight="5dp"-->
+                <!--                android:textSize="10sp"-->
+                <!--                android:layout_height="wrap_content"-->
+                <!--                android:paddingRight="5dp"-->
+                <!--                android:text="11:08 pm">-->
+
+                <!--            </TextView>-->
+
+                <!--            <TextView-->
+                <!--                android:id="@+id/receiver_day_main_chat"-->
+                <!--                android:layout_width="wrap_content"-->
+                <!--                android:gravity="center|bottom"-->
+                <!--                android:layout_height="match_parent"-->
+                <!--                android:textSize="10sp"-->
+                <!--                android:paddingRight="5dp"-->
+                <!--                android:text="Monday">-->
+
+                <!--            </TextView>-->
+
+
+                <!--            <TextView-->
+                <!--                android:layout_width="wrap_content"-->
+                <!--                android:layout_height="wrap_content"-->
+                <!--                android:paddingRight="5dp"-->
+                <!--            android:gravity="center"-->
+                <!--                android:text="12-02-2020">-->
+
+                <!--            </TextView>-->
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1.25"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_tick"
+                android:layout_height="18dp">
+
+            </ImageView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+    <!--origianl-->
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+    <!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--    android:layout_width="match_parent"-->
+    <!--    android:layout_height="wrap_content"-->
+    <!--    android:layout_margin="@dimen/activity_horizontal_margin"-->
+    <!--    android:background="@color/white"-->
+    <!--    android:orientation="vertical">-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/time"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_centerHorizontal="true"-->
+    <!--        android:layout_margin="@dimen/time_margin"-->
+    <!--        />-->
+
+    <!--    <de.hdodenhof.circleimageview.CircleImageView-->
+    <!--        android:id="@+id/smsImage"-->
+    <!--        android:layout_below="@id/time"-->
+    <!--        android:layout_width="42dp"-->
+    <!--        android:layout_height="42dp"-->
+    <!--        android:layout_marginTop="5dp"-->
+    <!--        android:src="@drawable/avatar" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/message"-->
+    <!--        android:layout_below="@id/time"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginLeft="@dimen/activity_horizontal_margin"-->
+    <!--        android:layout_marginRight="@dimen/activity_horizontal_margin"-->
+    <!--        android:textSize="@dimen/detailed_text_size"-->
+    <!--        android:layout_toRightOf="@id/smsImage"-->
+    <!--        android:padding="@dimen/activity_horizontal_margin"-->
+    <!--        android:text="@string/content_small"-->
+    <!--        android:background="@drawable/rounded_background"-->
+    <!--        android:textColor="@color/colorPrimaryText"-->
+    <!--        />-->
+
+
+    <!--</RelativeLayout>-->

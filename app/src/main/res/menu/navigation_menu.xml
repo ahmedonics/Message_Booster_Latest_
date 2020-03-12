@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@+id/group_feature">
+        <item android:id="@+id/all_conversations"
+                android:icon="@drawable/ic_conversation_list"
+                android:title="All Conversations"/>
+
+
+
+            <item android:id="@+id/unread_conversation"
+                android:icon="@drawable/unread_message"
+                android:title="Unread Conversations"/>
+
+            <item android:id="@+id/private_conversation"
+                android:icon="@drawable/ic_private_convesation"
+                android:title="Private Conversations"/>
+
+            <item android:id="@+id/archive_conversation"
+                android:icon="@drawable/ic_archived"
+                android:title="Archived Conversations"/>
+
+    </group>
+    <group android:id="@+id/group_settings"
+       >
+        <item android:id="@+id/sceduled_messages"
+                android:icon="@drawable/ic_scheduled_message"
+        android:title="Scheduled Messages"/>
+
+        <item android:id="@+id/blacklist"
+            android:icon="@drawable/ic_blacklist"
+            android:title="Blacklist"/>
+
+    </group>
+
+
+    <item android:id="@+id/settings"
+            android:icon="@drawable/ic_settings"
+            android:title="Settings"/>
+
+
+<!--        <item android:id="@+id/more_apps"-->
+<!--            android:icon="@drawable/ic_more"-->
+<!--            android:title="More Apps"/>-->
+
+<!--        <item android:id="@+id/rate_app"-->
+<!--            android:icon="@drawable/ic_rating"-->
+<!--            android:title="Rate App"/>-->
+
+<!--        <item android:id="@+id/share_app"-->
+<!--            android:icon="@drawable/ic_share"-->
+<!--            android:title="Share App"/>-->
+
+
+        <item android:id="@+id/about_us"
+            android:icon="@drawable/about_us"
+            android:title="About Us"/>
+
+</menu>
+
+
+<!--<menu xmlns:android="http://schemas.android.com/apk/res/android">-->
+
+<!--    <item android:id="@+id/all_conversations"-->
+<!--        android:icon="@drawable/ic_conversation_list"-->
+<!--        android:title="All Conversations"/>-->
+
+
+
+<!--    <item android:id="@+id/unread_conversation"-->
+<!--        android:icon="@drawable/unread_message"-->
+<!--        android:title="Unread Conversations"/>-->
+
+<!--    <item android:id="@+id/private_conversation"-->
+<!--        android:icon="@drawable/ic_private_convesation"-->
+<!--        android:title="Private Conversations"/>-->
+
+
+<!--    <item android:id="@+id/archive_conversation"-->
+<!--        android:icon="@drawable/ic_archived"-->
+<!--        android:title="Archived Conversations"/>-->
+
+<!--    <item android:id="@+id/sceduled_messages"-->
+<!--        android:icon="@drawable/ic_scheduled_message"-->
+<!--        android:title="Scheduled Messages"/>-->
+
+<!--    <item android:id="@+id/blacklist"-->
+<!--        android:icon="@drawable/ic_blacklist"-->
+<!--        android:title="Blacklist"/>-->
+
+
+
+
+
+<!--.....-->
+<!--    <item android:id="@+id/settings"-->
+<!--        android:icon="@drawable/ic_settings"-->
+<!--        android:title="Settings"/>-->
+
+
+<!--    <item android:id="@+id/more_apps"-->
+<!--        android:icon="@drawable/ic_more"-->
+<!--        android:title="More Apps"/>-->
+
+<!--    <item android:id="@+id/rate_app"-->
+<!--        android:icon="@drawable/ic_rating"-->
+<!--        android:title="Rate App"/>-->
+
+<!--    <item android:id="@+id/share_app"-->
+<!--        android:icon="@drawable/ic_share"-->
+<!--        android:title="Share App"/>-->
+
+
+<!--    <item android:id="@+id/about_us"-->
+<!--        android:icon="@drawable/about_us"-->
+<!--        android:title="About Us"/>-->
+
+<!--</menu>-->

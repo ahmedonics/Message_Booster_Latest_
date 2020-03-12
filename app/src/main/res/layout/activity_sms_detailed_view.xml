@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_sms_detailed_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="5"
+    tools:context="com.webianks.hatkemessenger.activities.SmsDetailedView">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/type_box_height"
+        android:background="@color/white"
+        android:scrollbars="vertical" />
+
+    <RelativeLayout
+        android:layout_gravity="bottom"
+
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/type_box_height"
+        android:layout_weight="0.5">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.7dp"
+
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/oval_shape_chat"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1.3"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="45dp"
+                    android:gravity="center"
+
+                    android:layout_gravity="center"
+                    android:layout_height="45dp">
+
+                    <ImageView
+
+                        android:layout_width="25dp"
+                        android:background="@drawable/ic_clip"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+
+                        >
+
+                    </ImageView>
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1.3"
+                android:gravity="center"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="45dp"
+                    android:gravity="center"
+
+                    android:layout_gravity="center"
+                    android:layout_height="45dp">
+
+                    <ImageView
+
+                        android:layout_width="25dp"
+                        android:background="@drawable/ic_sim"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+
+                        >
+
+                    </ImageView>
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="6.05"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_height="match_parent">
+
+
+                <EditText
+                    android:id="@+id/etMessage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColorHint="@color/dark_grey"
+                    android:gravity="center|left"
+                    android:padding="15dp"
+                    android:textSize="12sp"
+                    android:hint="Enter Your Message..."
+                    android:background="@drawable/edit_text_background"
+                    android:textColor="@color/black"
+                    >
+
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1.45"
+                android:gravity="center"
+                android:paddingRight="5dp"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="30dp"
+                    android:gravity="center"
+                    android:background="@drawable/circle_shape_purple"
+                    android:layout_gravity="center"
+                    android:layout_height="30dp">
+
+                    <ImageView
+                        android:id="@+id/btSend"
+                        android:layout_width="24dp"
+                        android:background="@drawable/send"
+                        android:layout_height="24dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+
+                        >
+
+                    </ImageView>
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</FrameLayout>
+
+
+
+
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+    <!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--    xmlns:tools="http://schemas.android.com/tools"-->
+    <!--    android:layout_width="match_parent"-->
+    <!--    android:layout_height="match_parent"-->
+    <!--    android:weightSum="10"-->
+    <!--    android:id="@+id/chat_linear_main"-->
+    <!--    android:orientation="vertical"-->
+    <!--    tools:context=".activities.SmsDetailedView">-->
+
+
+
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="0dp"-->
+    <!--        android:orientation="horizontal"-->
+    <!--        android:background="@color/colorPrimary"-->
+
+    <!--        android:weightSum="10"-->
+    <!--        android:layout_weight=".8">-->
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="0dp"-->
+    <!--            android:layout_weight="1.35"-->
+    <!--            android:paddingRight="10dp"-->
+    <!--            android:gravity="center|right"-->
+    <!--            android:layout_height="match_parent">-->
+
+    <!--            <ImageView-->
+    <!--                android:id="@+id/back_to_main_messages"-->
+    <!--                android:layout_width="22dp"-->
+    <!--                android:layout_gravity="center"-->
+
+    <!--                android:layout_height="22dp"-->
+    <!--                android:background="@drawable/ic_left"-->
+    <!--                android:gravity="center"-->
+    <!--                >-->
+
+    <!--            </ImageView>-->
+    <!--        </LinearLayout>-->
+
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="0dp"-->
+    <!--            android:layout_weight="2"-->
+    <!--            android:layout_gravity="center"-->
+    <!--            android:gravity="center"-->
+    <!--            android:layout_height="match_parent">-->
+
+    <!--            <de.hdodenhof.circleimageview.CircleImageView-->
+    <!--                xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--                android:id="@+id/a"-->
+    <!--                android:layout_width="40dp"-->
+    <!--                android:layout_height="40dp"-->
+    <!--                android:src="@drawable/avatar"-->
+    <!--                app:civ_border_width="2dp"-->
+    <!--                app:civ_border_color="#FFFFFF"/>-->
+
+    <!--        </LinearLayout>-->
+
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="0dp"-->
+    <!--            android:layout_weight="5.35"-->
+    <!--            android:layout_height="match_parent">-->
+
+
+    <!--            <TextView-->
+    <!--                android:id="@+id/caht_single_person_name"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="match_parent"-->
+    <!--                android:gravity="center|left"-->
+    <!--                android:paddingBottom="5dp"-->
+
+    <!--                android:textSize="15sp"-->
+    <!--                android:text="Ahtsham Ul Haq Kayani"-->
+    <!--                android:textColor="@color/white">-->
+
+    <!--            </TextView>-->
+    <!--        </LinearLayout>-->
+
+    <!--        <LinearLayout-->
+    <!--            android:id="@+id/menu_chat_single_person"-->
+    <!--            android:layout_width="0dp"-->
+    <!--            android:layout_weight="1.25"-->
+    <!--            android:gravity="center"-->
+    <!--            android:layout_height="match_parent">-->
+
+    <!--            <ImageView-->
+
+    <!--                android:layout_width="22dp"-->
+    <!--                android:background="@drawable/ic_menu"-->
+    <!--                android:layout_height="22dp"-->
+    <!--                android:layout_gravity="center"-->
+    <!--                android:gravity="center"-->
+    <!--                >-->
+
+    <!--            </ImageView>-->
+    <!--        </LinearLayout>-->
+
+    <!--    </LinearLayout>-->
+
+
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="0dp"-->
+    <!--        android:layout_weight="8.3">-->
+
+
+    <!--        <androidx.recyclerview.widget.RecyclerView-->
+    <!--            android:id="@+id/recyclerview"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content">-->
+
+    <!--        </androidx.recyclerview.widget.RecyclerView>-->
+    <!--    </LinearLayout>-->
+
+
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="0dp"-->
+    <!--        android:orientation="horizontal"-->
+    <!--        android:background="@drawable/oval_shape_chat"-->
+    <!--        android:weightSum="10"-->
+    <!--        android:layout_margin="5dp"-->
+    <!--        android:layout_weight=".9">-->
+
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="0dp"-->
+    <!--            android:layout_weight="1.3"-->
+    <!--            android:gravity="center"-->
+    <!--            android:paddingLeft="5dp"-->
+    <!--            android:layout_height="match_parent">-->
+
+    <!--            <LinearLayout-->
+    <!--                android:layout_width="45dp"-->
+    <!--                android:gravity="center"-->
+
+    <!--                android:layout_gravity="center"-->
+    <!--                android:layout_height="45dp">-->
+
+    <!--                <ImageView-->
+
+    <!--                    android:layout_width="25dp"-->
+    <!--                    android:background="@drawable/ic_clip"-->
+    <!--                    android:layout_height="25dp"-->
+    <!--                    android:layout_gravity="center"-->
+    <!--                    android:gravity="center"-->
+
+    <!--                    >-->
+
+    <!--                </ImageView>-->
+
+    <!--            </LinearLayout>-->
+
+
+
+    <!--        </LinearLayout>-->
+
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="0dp"-->
+    <!--            android:layout_weight="1.3"-->
+    <!--            android:gravity="center"-->
+    <!--            android:layout_height="match_parent">-->
+
+    <!--            <LinearLayout-->
+    <!--                android:layout_width="45dp"-->
+    <!--                android:gravity="center"-->
+
+    <!--                android:layout_gravity="center"-->
+    <!--                android:layout_height="45dp">-->
+
+    <!--                <ImageView-->
+
+    <!--                    android:layout_width="25dp"-->
+    <!--                    android:background="@drawable/ic_sim"-->
+    <!--                    android:layout_height="25dp"-->
+    <!--                    android:layout_gravity="center"-->
+    <!--                    android:gravity="center"-->
+
+    <!--                    >-->
+
+    <!--                </ImageView>-->
+
+    <!--            </LinearLayout>-->
+
+
+
+    <!--        </LinearLayout>-->
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="0dp"-->
+    <!--            android:layout_weight="6.05"-->
+    <!--            android:gravity="center"-->
+    <!--            android:layout_gravity="center"-->
+    <!--            android:layout_height="match_parent">-->
+
+
+    <!--            <EditText-->
+    <!--                android:id="@+id/etMessage"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="match_parent"-->
+    <!--                android:textColorHint="@color/dark_grey"-->
+    <!--                android:gravity="center|left"-->
+    <!--                android:padding="15dp"-->
+    <!--                android:textSize="10sp"-->
+    <!--                android:hint="Enter Your Message..."-->
+    <!--                android:background="@drawable/edit_text_background"-->
+
+    <!--                android:textColor="@color/black"-->
+    <!--                >-->
+
+    <!--            </EditText>-->
+    <!--        </LinearLayout>-->
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="0dp"-->
+    <!--            android:layout_weight="1.45"-->
+    <!--            android:gravity="center"-->
+    <!--            android:paddingRight="5dp"-->
+    <!--            android:layout_height="match_parent">-->
+
+    <!--            <LinearLayout-->
+    <!--                android:layout_width="30dp"-->
+    <!--                android:gravity="center"-->
+    <!--                android:background="@drawable/circle_shape_purple"-->
+    <!--                android:layout_gravity="center"-->
+    <!--                android:layout_height="30dp">-->
+
+    <!--                <ImageView-->
+    <!--                    android:id="@+id/btSend"-->
+    <!--                    android:layout_width="24dp"-->
+    <!--                    android:background="@drawable/send"-->
+    <!--                    android:layout_height="24dp"-->
+    <!--                    android:layout_gravity="center"-->
+    <!--                    android:gravity="center"-->
+
+    <!--                    >-->
+
+    <!--                </ImageView>-->
+
+    <!--            </LinearLayout>-->
+
+
+
+    <!--        </LinearLayout>-->
+
+    <!--    </LinearLayout>-->
+    <!--</LinearLayout>-->
+
+
